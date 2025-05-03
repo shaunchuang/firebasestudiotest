@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Geist_Sans as GeistSans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
-const geistSans = GeistSans({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
 });
 
@@ -24,7 +23,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          geistSans.variable
+          inter.className
         )}
       >
         {children}
