@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
@@ -109,14 +113,7 @@ body {
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 300px; /* Adjust the width as needed */
-  min-height: 200px;
-  border-radius: 0.5rem;
-  background-color: lightgray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  width: 100%; /* Ensure item takes full width of its container */
 }
 
 .carousel-button {
