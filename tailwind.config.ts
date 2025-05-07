@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,6 +9,16 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem', // p-4 equivalent for container
+        sm: '2rem',      // p-8 equivalent for container on sm screens
+        lg: '4rem',      // p-16 equivalent for container on lg screens
+        xl: '5rem',      // p-20 equivalent for container on xl screens
+        '2xl': '6rem',   // p-24 equivalent for container on 2xl screens
+      },
+    },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
